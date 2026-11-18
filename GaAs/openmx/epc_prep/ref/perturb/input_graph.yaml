@@ -1,0 +1,16 @@
+basic:
+  prep_mode: 'graph-pack'
+  outdir: './'
+
+software_path:
+  openmx_read_path: ./read_openmx
+
+material:
+  nao_max: 19
+  DFT_software: openmx
+
+graph_pack:
+  HSout_filename: 'QTrans.scfout'
+  vbout_filename: 'QTrans.out'
+  data_folder: ./*/
+  converge_step_ratio: 0.9

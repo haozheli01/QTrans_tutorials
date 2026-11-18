@@ -1,0 +1,36 @@
+basic:
+  cal_mode: 'conductivity'
+  graph_data_path_uc: ../data/graph_data.npz
+  nao_max: 14
+  Ham_type: openmx
+  outdir: './'
+
+advanced:
+  read_sparse_grad_mat: True
+  
+phonon:
+  supercell_matrix: [[3.0, 0.0, 0.0], [0, 3, 0], [0, 0, 3]]
+  unitcell_filename: ../data/Al-pri.vasp
+  force_infos_filename: ../data/FORCE_SETS
+
+epc:
+  grad_mat_path: ../data/grad_mat_sparse.npy
+  mat_info_sc_path: ../data/mat_info_sc.npy
+  cell_range_cut: [2,2,2]
+  phonon_frequency_cutoff: 0.5 # meV
+
+transport:
+  k_size: [32,32,32]
+  q_size: [32,32,32]
+  bands_indices: '1-6'
+  temperature: 300.0 # K
+  smeark: 40 # meV
+  smearq: 40 # meV
+  gauss_type: -99 # the type of gaussian function
+  e_thr: 120 # meV commonly is 3 times degaussw
+
+conductivity:
+  mob_level: erta
+  over_band_edge: 0.2
+  ibte_error: 0.00001
+  ibte_cycle: 250

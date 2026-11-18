@@ -1,0 +1,28 @@
+
+          ____ _______                  
+         / __ \__   __|                 
+        | |  | | | |_ __ __ _ _ __  ___ 
+        | |  | | | | '__/ _` | '_ \/ __|
+        | |__| | | | | | (_| | | | \__ \
+         \___\_\ |_|_|  \__,_|_| |_|___/
+        
+        version: 1.0.0
+        
+Running QTrans using 8 cores across 1 nodes using UNKNOWN scheduler.
+
+Using OPENMX with a 14-orbital definition dictionary.
+
+Running calculation for a non-magnetic system without SOC.
+######################################## Phonon Calculation ########################################
+Automatically generating high-symmetry points..
+High-Symmetry Points:
+GAMMA : 0.0000    0.0000    0.0000
+X     : 0.5000    0.0000    0.5000
+U     : 0.6250    0.2500    0.6250
+K     : 0.3750    0.3750    0.7500
+GAMMA : 0.0000    0.0000    0.0000
+L     : 0.5000    0.5000    0.5000
+W     : 0.5000    0.2500    0.7500
+X     : 0.5000    0.0000    0.5000
+
+######################################## QTRANS JOB SUCCESS ########################################

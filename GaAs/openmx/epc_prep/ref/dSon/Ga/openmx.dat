@@ -1,0 +1,49 @@
+#
+# Openmx input file generate by QTrans
+#
+
+System.CurrrentDirectory     ./
+System.Name                  QTrans
+DATA.PATH                    /public/home/liushixu/software/openmx/openmx3.9.9/DFT_DATA19
+HS.fileout                   on
+scf.XcType                   GGA-PBE
+scf.partialCoreCorrection    on
+scf.ElectronicTemperature    300.0
+scf.energycutoff             200.0
+scf.maxIter                  300
+scf.EigenvalueSolver         Band
+scf.Kgrid                    13 13 13
+scf.Mixing.Type              rmm-diis
+scf.Init.Mixing.Weight       0.001
+scf.Min.Mixing.Weight        0.0001
+scf.Max.Mixing.Weight        0.3
+scf.Mixing.History           50
+scf.Mixing.StartPulay        30
+scf.Mixing.EveryPulay        1
+scf.criterion                1.0e-7
+scf.SpinPolarization         off
+#
+# Definition of Atomic Species
+#
+Species.Number       1
+<Definition.of.Atomic.Species
+Ga   Ga7.0-s3p2d2       Ga_PBE19
+Definition.of.Atomic.Species>
+
+#
+# Atoms
+#
+Atoms.Number           4
+Atoms.SpeciesAndCoordinates.Unit   Ang # Ang|AU
+<Atoms.SpeciesAndCoordinates           # Unit=Ang.
+1    Ga   2.8266593   2.8266593   2.8266593   6.50   6.50
+2    Ga   2.8276593   2.8266593   2.8266593   6.50   6.50
+3    Ga   2.8266593   2.8276593   2.8266593   6.50   6.50
+4    Ga   2.8266593   2.8266593   2.8276593   6.50   6.50
+Atoms.SpeciesAndCoordinates>
+Atoms.UnitVectors.Unit             Ang #  Ang|AU
+<Atoms.UnitVectors                     # unit=Ang.
+      -0.0000000   2.8266593   2.8266593
+       2.8266593   0.0000000   2.8266593
+       2.8266593   2.8266593   0.0000000
+Atoms.UnitVectors>

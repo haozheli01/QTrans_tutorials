@@ -1,0 +1,20 @@
+basic:
+  cal_mode: 'dos'
+  graph_data_path_uc: ../../data/graph_data.npz
+  nao_max: 14
+  Ham_type: openmx
+  outdir: './'
+
+phonon:
+  supercell_matrix: [[3.0, 0.0, 0.0], [0, 3, 0], [0, 0, 3]]
+  unitcell_filename: ../../data/Al-pri.vasp
+  force_infos_filename: ../../data/FORCE_SETS
+
+advanced:
+  tetra_integral: True
+
+dos:
+  dos_qp: 'phonon'
+  dos_npoints: 500
+  dos_mesh_size: [20,20,20]
+  dos_erange: [0,0.050]

@@ -1,0 +1,33 @@
+#!/bin/bash
+#SBATCH --job-name=abacus
+#SBATCH --nodes=1
+##SBATCH --exclusive
+#SBATCH --ntasks-per-node=16
+#SBATCH --output=%j.log
+#SBATCH --partition=debug
+
+export I_MPI_PMI_LIBRARY=/opt/gridview/slurm/lib/libpmi2.so
+ulimit -s unlimited
+
+module purge
+module load compiler/gcc/7.3.1
+module load compiler/intel/2021.3.0
+module load mpi/intelmpi/2021.3.0
+module load compiler/cmake/3.20.1
+
+
+export UCX_TLS=dc,self
+export OMP_NUM_THREADS=1
+
+# Abacus
+source /software/compiler/intel/oneapi/setvars.sh
+source /public/home/lihaozhe/workspace/software/abacus/abacus/toolchain/abacus_env.sh
+
+XBIN=/public/home/lihaozhe/workspace/software/abacus/abacus/bin
+
+date > time
+srun --mpi=pmi2 ${XBIN}/abacus > abacus.out 2>&1
+# srun --mpi=pmi2 ${XBIN}/abacus-postprocess > postprocess.out 2>&1
+
+date >> time
+exit 0

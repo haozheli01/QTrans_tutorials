@@ -1,0 +1,72 @@
+#
+# Openmx input file generate by QTrans
+#
+
+System.CurrrentDirectory     ./
+System.Name                  QTrans
+DATA.PATH                    /public/home/lihaozhe/software/openmx/openmx3.9/DFT_DATA19
+HS.fileout                   on
+scf.XcType                   GGA-PBE
+scf.partialCoreCorrection    on
+scf.ElectronicTemperature    300.0
+scf.energycutoff             200.0
+scf.maxIter                  300
+scf.EigenvalueSolver         Band
+scf.Kgrid                    7 7 7
+scf.Mixing.Type              rmm-diis
+scf.Init.Mixing.Weight       0.001
+scf.Min.Mixing.Weight        0.0001
+scf.Max.Mixing.Weight        0.3
+scf.Mixing.History           50
+scf.Mixing.StartPulay        30
+scf.Mixing.EveryPulay        1
+scf.criterion                1.0e-10
+scf.SpinPolarization         on
+#
+# Definition of Atomic Species
+#
+Species.Number       1
+<Definition.of.Atomic.Species
+Fe   Fe5.5H-s3p2d1       Fe_PBE19H
+Definition.of.Atomic.Species>
+
+#
+# Atoms
+#
+Atoms.Number          27
+Atoms.SpeciesAndCoordinates.Unit   Ang # Ang|AU
+<Atoms.SpeciesAndCoordinates           # Unit=Ang.
+1    Fe   0.0000000   0.0000000   0.0000000   9.1069865   6.8930135  on   
+2    Fe   1.4157935   1.4157935  -1.4157935   9.1069865   6.8930135  on   
+3    Fe   2.8315870   2.8315870  -2.8315870   9.1069865   6.8930135  on   
+4    Fe   1.4157935  -1.4157935   1.4157935   9.1069865   6.8930135  on   
+5    Fe   2.8315870   0.0000000   0.0000000   9.1069865   6.8930135  on   
+6    Fe   4.2473805   1.4157935  -1.4157935   9.1069865   6.8930135  on   
+7    Fe   2.8315870  -2.8315870   2.8315870   9.1069865   6.8930135  on   
+8    Fe   4.2473805  -1.4157935   1.4157935   9.1069865   6.8930135  on   
+9    Fe   5.6631740   0.0000000   0.0000000   9.1069865   6.8930135  on   
+10   Fe  -1.4157935   1.4157935   1.4157935   9.1069865   6.8930135  on   
+11   Fe   0.0000000   2.8315870   0.0000000   9.1069865   6.8930135  on   
+12   Fe   1.4157935   4.2473805  -1.4157935   9.1069865   6.8930135  on   
+13   Fe   0.0000000   0.0000000   2.8315870   9.1069865   6.8930135  on   
+14   Fe   1.4257935   1.4157935   1.4157935   9.1069865   6.8930135  on   
+15   Fe   2.8315870   2.8315870   0.0000000   9.1069865   6.8930135  on   
+16   Fe   1.4157935  -1.4157935   4.2473805   9.1069865   6.8930135  on   
+17   Fe   2.8315870   0.0000000   2.8315870   9.1069865   6.8930135  on   
+18   Fe   4.2473805   1.4157935   1.4157935   9.1069865   6.8930135  on   
+19   Fe  -2.8315870   2.8315870   2.8315870   9.1069865   6.8930135  on   
+20   Fe  -1.4157935   4.2473805   1.4157935   9.1069865   6.8930135  on   
+21   Fe   0.0000000   5.6631740   0.0000000   9.1069865   6.8930135  on   
+22   Fe  -1.4157935   1.4157935   4.2473805   9.1069865   6.8930135  on   
+23   Fe   0.0000000   2.8315870   2.8315870   9.1069865   6.8930135  on   
+24   Fe   1.4157935   4.2473805   1.4157935   9.1069865   6.8930135  on   
+25   Fe   0.0000000   0.0000000   5.6631740   9.1069865   6.8930135  on   
+26   Fe   1.4157935   1.4157935   4.2473805   9.1069865   6.8930135  on   
+27   Fe   2.8315870   2.8315870   2.8315870   9.1069865   6.8930135  on   
+Atoms.SpeciesAndCoordinates>
+Atoms.UnitVectors.Unit             Ang #  Ang|AU
+<Atoms.UnitVectors                     # unit=Ang.
+      -4.2473805   4.2473805   4.2473805
+       4.2473805  -4.2473805   4.2473805
+       4.2473805   4.2473805  -4.2473805
+Atoms.UnitVectors>

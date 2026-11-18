@@ -1,0 +1,19 @@
+basic:
+  prep_mode: 'grad-epc'
+  outdir: './'
+
+software_path:
+  openmx_pp_path: /public/home/lihaozhe/workspace/software/openmx/openmx3.9/source/openmx_postprocess
+  openmx_read_path: /public/home/lihaozhe/workspace/software/openmx/openmx3.9/source/read_openmx
+  openmx_dftdata_dir: /public/home/lihaozhe/workspace/software/openmx/openmx3.9/DFT_DATA19
+
+material:
+  struct_path: ./Fe-pri.dat
+  nao_max: 14
+  DFT_software: openmx
+  magnetic_type: collinear
+
+grad_epc:
+  epc_sc_matrix: [3, 3, 3]
+  graph_data_sc_path: ./perturb/graph_data_QTrans.npz
+  mat_info_sc_path: ./perturb/mat_info_sc.npy

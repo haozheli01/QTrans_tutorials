@@ -1,0 +1,22 @@
+
+          ____ _______                  
+         / __ \__   __|                 
+        | |  | | | |_ __ __ _ _ __  ___ 
+        | |  | | | | '__/ _` | '_ \/ __|
+        | |__| | | | | | (_| | | | \__ \
+         \___\_\ |_|_|  \__,_|_| |_|___/
+        
+        version: 1.0.0
+        
+Running QTrans using 8 cores across 1 nodes using UNKNOWN scheduler.
+
+Using OPENMX with a 19-orbital definition dictionary.
+
+Running calculation for a non-magnetic system without SOC.
+######################################### DOS Calculation ##########################################
+Calculate density of states for electron.
+
+The symmetry for setting up kpoint is: F-43m (216)
+The system is an insulator, the VBM energy of -4.7764 eV is chosen as the reference energy.
+
+######################################## QTRANS JOB SUCCESS ########################################

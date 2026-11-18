@@ -1,0 +1,29 @@
+
+          ____ _______                  
+         / __ \__   __|                 
+        | |  | | | |_ __ __ _ _ __  ___ 
+        | |  | | | | '__/ _` | '_ \/ __|
+        | |__| | | | | | (_| | | | \__ \
+         \___\_\ |_|_|  \__,_|_| |_|___/
+        
+        version: 1.0.0
+        
+Running QTrans using 8 cores across 1 nodes using UNKNOWN scheduler.
+
+K-point batch memory budget: 256 MiB.
+
+Using OPENMX with a 19-orbital definition dictionary.
+
+Running calculation for a non-magnetic system without SOC.
+######################################### EPC Calculation ##########################################
+Loading sparse gradient matrix from /home/hzli/workspace/QTrans/QTrans-dist/tutorials/GaAs/openmx/data/grad_mat_sparse.npy...
+The long-range correction is calculated using a Taylor expansion up to order 0.
+High-Symmetry Points:
+L     : 0.5000    0.5000    0.5000
+G     : 0.0000    0.0000    0.0000
+X     : 0.5000    0.0000    0.5000
+W     : 0.5000    0.2500    0.7500
+K     : 0.3750    0.3750    0.7500
+G     : 0.0000    0.0000    0.0000
+
+######################################## QTRANS JOB SUCCESS ########################################

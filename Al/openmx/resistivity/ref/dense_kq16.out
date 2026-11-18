@@ -1,0 +1,33 @@
+
+          ____ _______                  
+         / __ \__   __|                 
+        | |  | | | |_ __ __ _ _ __  ___ 
+        | |  | | | | '__/ _` | '_ \/ __|
+        | |__| | | | | | (_| | | | \__ \
+         \___\_\ |_|_|  \__,_|_| |_|___/
+        
+        version: 1.0.0
+        
+Running QTrans using 8 cores across 1 nodes using UNKNOWN scheduler.
+
+Using OPENMX with a 14-orbital definition dictionary.
+
+Running calculation for a non-magnetic system without SOC.
+##################################### Resistivity Calculation ######################################
+Loading dense gradient matrix from /home/hzli/workspace/QTrans/QTrans-dist/tutorials/Al/openmx/data/grad_mat.npy...
+
+The symmetry for setting up kpoint is: Fm-3m (225)
+Fermi energy = -4.7578250560112645 eV
+DOS of Fermi level (spin factor not included) = 0.1108199479049779
+----------------------------------------------------------------------------------------------------
+The number of carriers per unit cell is automatically set to be 2.0000.
+Fermi speed(m/s)      x                y                z
+                 7.0905e+05        7.0905e+05        7.0905e+05
+12 %[******->............................................][total: 0.59s, step: 0.59s, remaining: 4.16s]25 %[************->......................................][total: 6.20s, step: 5.60s, remaining: 18.59s]38 %[******************->................................][total: 11.43s, step: 5.23s, remaining: 19.05s]50 %[*************************->.........................][total: 14.98s, step: 3.55s, remaining: 14.98s]62 %[*******************************->...................][total: 19.09s, step: 4.11s, remaining: 11.45s]75 %[*************************************->.............][total: 23.38s, step: 4.29s, remaining: 7.79s]88 %[*******************************************->.......][total: 27.56s, step: 4.17s, remaining: 3.94s]100%[**************************************************->][total: 31.15s, step: 3.59s, remaining: 0.00s]
+---------------transport_eliashberg_function_cal_epc_iso_dense has run successfully!----------------
+----------------------------------------------------------------------------------------------------
+Ziman's resistance(micro-Ohm*cm) =   9.0476e-01
+Allen's resistance(micro-Ohm*cm) =   2.8562e+00
+----------------------------------------------------------------------------------------------------
+
+######################################## QTRANS JOB SUCCESS ########################################

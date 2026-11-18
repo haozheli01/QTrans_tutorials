@@ -1,0 +1,23 @@
+INPUT_PARAMETERS
+suffix                  Al
+pseudo_dir              /public/home/lihaozhe/workspace/software/abacus/SG15_ONCV
+orbital_dir		        /public/home/lihaozhe/workspace/software/abacus/SG15-std
+ecutwfc                 150             # Rydberg
+scf_thr                 1e-9		    # SCF criterion
+basis_type              lcao    
+
+
+## scf
+calculation             scf
+out_chg                 0
+nbands                  10
+smearing_method         gauss
+smearing_sigma          0.01
+out_mat_hs2             1
+
+# # ## nscf
+# calculation             nscf
+# kpoint_file             KLINES
+# nbands                  10
+# init_chg                file
+# out_band                1

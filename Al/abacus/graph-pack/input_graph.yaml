@@ -1,0 +1,16 @@
+basic:
+  prep_mode: 'graph-pack'
+  outdir: './'
+
+software_path:
+  abacus_dftdata_dir: /public/home/lihaozhe/workspace/software/abacus/SG15_ONCV
+  abacus_orb_dir: /public/home/lihaozhe/workspace/software/abacus/SG15-std
+
+material:
+  nao_max: 40
+  DFT_software: abacus
+
+graph_pack:
+  data_folder: ./DFT
+  abacus_out_folder: OUT.Al
+  abacus_scf_log: running_scf.log

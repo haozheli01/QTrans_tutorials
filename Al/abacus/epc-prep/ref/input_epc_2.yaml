@@ -1,0 +1,17 @@
+basic:
+  prep_mode: 'grad-epc'
+  outdir: './'
+
+software_path:
+  abacus_pp_path: /public/home/lihaozhe/workspace/software/abacus/abacus/bin/abacus
+  abacus_dftdata_dir: /public/home/lihaozhe/workspace/software/abacus/SG15_ONCV
+  abacus_orb_dir: /public/home/lihaozhe/workspace/software/abacus/SG15-std
+
+material:
+  nao_max: 40
+  DFT_software: abacus
+  struct_path: ./STRU
+
+grad_epc:
+  graph_data_sc_path: ./perturb/graph_data_QTrans.npz
+  mat_info_sc_path: ./perturb/mat_info_sc.npy

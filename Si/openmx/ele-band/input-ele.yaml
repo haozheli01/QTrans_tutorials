@@ -1,0 +1,11 @@
+basic:
+  cal_mode: 'band'
+  graph_data_path_uc: ../data/graph_data.npz
+  nao_max: 14
+  Ham_type: openmx
+  outdir: './'
+
+dispersion:
+  # high_symmetry_points: [[0.0, 0.0, 0.0],[0.5, 0.0, 0.5],[0.5, 0.25, 0.75],[0.375, 0.375, 0.75],[0.0, 0.0, 0.0]]
+  # high_symmetry_labels: ['G', 'X', 'W', 'K', 'G']
+  nks_path: 1000

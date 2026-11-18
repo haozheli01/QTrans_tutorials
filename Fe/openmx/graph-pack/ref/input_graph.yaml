@@ -1,0 +1,17 @@
+basic:
+  prep_mode: 'graph-pack'
+  outdir: './'
+
+software_path:
+  openmx_read_path: ./read_openmx
+
+material:
+  nao_max: 14
+  DFT_software: openmx
+  magnetic_type: collinear
+
+graph_pack:
+  HSout_filename: 'crystal.scfout'
+  vbout_filename: 'crystal.out'
+  data_folder: ./DFT/
+  converge_step_ratio: 0.9

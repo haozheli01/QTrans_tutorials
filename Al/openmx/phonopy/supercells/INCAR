@@ -1,0 +1,20 @@
+Global Parameters
+ISTART =  1            (Read existing wavefunction, if there)
+ENCUT  =  500        (Cut-off energy for plane wave basis set, in eV)
+LWAVE  = .FALSE.        (Write WAVECAR or not)
+LCHARG = .FALSE.        (Write CHGCAR or not)
+ADDGRID= .TRUE.        (Increase grid, helps GGA convergence)
+
+Electronic Relaxation
+ISMEAR =  1            (Gaussian smearing, metals:1)
+SIGMA  =  0.1         (Smearing value in eV, metals:0.2)
+NELM   =  90           (Max electronic SCF steps)
+EDIFF  =  1E-08        (SCF energy convergence, in eV)
+NSW    =  0            (Max ionic steps)
+EDIFFG = -1E-03        (Ionic convergence, eV/AA)
+
+IBRION = -1
+
+KPAR  = 8
+NCORE = 8
+

@@ -1,0 +1,39 @@
+basic:
+  cal_mode: 'conductivity'
+  graph_data_path_uc: ../../data/graph_data.npz
+  nao_max: 19
+  Ham_type: openmx
+  outdir: './'
+
+advanced:
+  read_sparse_grad_mat: True
+
+phonon:
+  supercell_matrix: [[3.0, 0.0, 0.0], [0, 3, 0], [0, 0, 3]]
+  unitcell_filename: ../../data/GaAs-pri.vasp
+  force_infos_filename: ../../data/FORCE_SETS
+  apply_correction: True
+  BECs: [[[2.10569, 0.00000, 0.00000],[0.00000, 2.10569, 0.00000],[0.00000, 0.00000, 2.10569]],[[-2.10569, 0.00000, 0.00000],[0.00000, -2.10569, 0.00000],[0.00000, 0.00000, -2.10569]]]
+  DL: [[13.355780, 0.000000, 0.000000],[0.000000, 13.355780, 0.000000],[0.000000, 0.000000, 13.355780]]
+
+epc:
+  grad_mat_path: ../../data/grad_mat_sparse.npy
+  mat_info_sc_path: ../../data/mat_info_sc.npy
+  cell_range_cut: [3,3,3]
+  phonon_frequency_cutoff: 2.0 # meV
+
+transport:
+  k_size: [40,40,40]
+  q_size: [40,40,40]
+  bands_indices: [15]
+  smeark: 10 # meV
+  smearq: 10 # meV
+  gauss_type: 0 # the type of gaussian function
+  e_thr: 30 # meV commonly is 3 times degaussq
+
+conductivity:
+  over_band_edge: 0.2
+  ncarrier: 10000000000000000 # 1E16 cm^-3
+  polar_rate_path: '../polar/rate_nk_polar.dat'
+  rmp_rate_path: '../rmp/rate_nk_rmp.dat'
+

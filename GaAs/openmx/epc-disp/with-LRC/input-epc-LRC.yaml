@@ -1,0 +1,30 @@
+basic:
+  cal_mode: 'epc'
+  graph_data_path_uc: ../../data/graph_data.npz
+  nao_max: 19
+  Ham_type: openmx
+  outdir: './'
+
+advanced:
+  read_sparse_grad_mat: True
+
+phonon:
+  supercell_matrix: [[3.0, 0.0, 0.0], [0, 3, 0], [0, 0, 3]]
+  unitcell_filename: ../../data/GaAs-pri.vasp
+  force_infos_filename: ../../data/FORCE_SETS
+  apply_correction: True
+  BECs: [[[2.10569, 0.00000, 0.00000],[0.00000, 2.10569, 0.00000],[0.00000, 0.00000, 2.10569]],[[-2.10569, 0.00000, 0.00000],[0.00000, -2.10569, 0.00000],[0.00000, 0.00000, -2.10569]]]
+  DL: [[13.355780, 0.000000, 0.000000],[0.000000, 13.355780, 0.000000],[0.000000, 0.000000, 13.355780]]
+
+epc:
+  grad_mat_path: ../../data/grad_mat_sparse.npy
+  mat_info_sc_path: ../../data/mat_info_sc.npy
+  cell_range_cut: [3,3,3]
+  q_cut: 100.0 # The q cut for dipole correction. We can have a test to determine the best q_cut.
+  
+dispersion:
+  high_symmetry_points: [[0.5, 0.5, 0.5],[0.0, 0.0, 0.0],[0.5, 0.0, 0.5],[0.5, 0.25, 0.75],[0.375, 0.375, 0.75],[0.0, 0.0, 0.0]]
+  high_symmetry_labels: ['L', 'G', 'X', 'W', 'K', 'G']
+  nks_path: 500
+  epc_path_fix_k: [0.0, 0.0, 0.0]
+  dispersion_select_index: '15,15' # scattering between band n --> m

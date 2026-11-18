@@ -1,0 +1,48 @@
+
+          ____ _______                  
+         / __ \__   __|                 
+        | |  | | | |_ __ __ _ _ __  ___ 
+        | |  | | | | '__/ _` | '_ \/ __|
+        | |__| | | | | | (_| | | | \__ \
+         \___\_\ |_|_|  \__,_|_| |_|___/
+        
+        version: 1.0.0
+        
+Running QTrans using 8 cores across 1 nodes using UNKNOWN scheduler.
+
+K-point batch memory budget: 256 MiB.
+
+Using OPENMX with a 14-orbital definition dictionary.
+
+Running calculation for a non-magnetic system without SOC.
+###################################### Breakdown Calculation #######################################
+Loading sparse gradient matrix from /home/hzli/workspace/QTrans/QTrans-dist/tutorials/Si/openmx/data/grad_mat_sparse.npy...
+
+The symmetry for setting up kpoint is: Fd-3m (227)
+CBM energy = -2.486131952282724 eV
+
+----------------------------------------------------------------------------------------------------
+|                                  BZ POINT DISTRIBUTION CHECK (PARALLEL)                          |
+----------------------------------------------------------------------------------------------------
+   Number of FBZ k-points              : 4096
+   Number of IBZ k-points              : 145
+   Number of contributing IBZ k-points : 145
+   Number of FBZ q-points              : 4096
+   Number of MPI ranks being used      : 8
+
+12 %[******->............................................][total: 29.17s, step: 29.17s, remaining: 204.20s]25 %[************->......................................][total: 50.53s, step: 21.36s, remaining: 151.59s]38 %[******************->................................][total: 68.23s, step: 17.70s, remaining: 113.72s]50 %[*************************->.........................][total: 87.51s, step: 19.27s, remaining: 87.51s]62 %[*******************************->...................][total: 110.40s, step: 22.89s, remaining: 66.24s]75 %[*************************************->.............][total: 128.86s, step: 18.47s, remaining: 42.95s]88 %[*******************************************->.......][total: 141.76s, step: 12.89s, remaining: 20.25s]100%[**************************************************->][total: 154.95s, step: 13.19s, remaining: 0.00s]
+----------------------scattering_rate_cal_epc_fbd_sparse has run successfully!----------------------
+Smear of Summation (meV)    Max DOS (1/eV)       Breakdown Field (MV/m)
+               50.00              0.8222              100.1808
+              100.00              0.7294               89.2444
+              150.00              0.6573               81.9472
+              200.00              0.6727               85.1180
+              250.00              0.7184               91.1207
+              300.00              0.7482               95.3838
+              350.00              0.7700               98.8835
+              400.00              0.7875              102.0965
+              450.00              0.8017              105.0633
+              500.00              0.8128              107.6512
+Total peak memory across all ranks: 2.23 GB
+
+######################################## QTRANS JOB SUCCESS ########################################

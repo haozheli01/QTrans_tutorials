@@ -1,0 +1,109 @@
+Global seed set to 666
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+
+##################################################################
+#                                                                #
+#    ██╗  ██╗ █████╗ ███╗   ███╗ ██████╗ ███╗   ██╗███╗   ██╗    #
+#    ██║  ██║██╔══██╗████╗ ████║██╔════╝ ████╗  ██║████╗  ██║    #
+#    ███████║███████║██╔████╔██║██║  ███╗██╔██╗ ██║██╔██╗ ██║    #
+#    ██╔══██║██╔══██║██║╚██╔╝██║██║   ██║██║╚██╗██║██║╚██╗██║    #
+#    ██║  ██║██║  ██║██║ ╚═╝ ██║╚██████╔╝██║ ╚████║██║ ╚████║    #
+#    ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝    #
+#                                                                #
+#                  ██╗   ██╗██████╗     ██████╗                  #
+#                  ██║   ██║╚════██╗   ██╔═████╗                 #
+#                  ██║   ██║ █████╔╝   ██║██╔██║                 #
+#                  ╚██╗ ██╔╝██╔═══╝    ████╔╝██║                 #
+#                   ╚████╔╝ ███████╗██╗╚██████╔╝                 #
+#                    ╚═══╝  ╚══════╝╚═╝ ╚═════╝                  #
+#       Author: Yang Zhong       Email: yzhong@fudan.edu.cn      #
+##################################################################
+
+{'dataset_params': {'batch_size': 1,
+                    'csv_params': {'crystal_path': 'crystals',
+                                   'file_type': 'poscar',
+                                   'id_prop_path': './',
+                                   'l_pred_atomwise_tensor': True,
+                                   'l_pred_crystal_tensor': False,
+                                   'rank_tensor': 0},
+                    'database_type': 'db',
+                    'db_params': {'db_path': './',
+                                  'property_list': ['energy', 'hamiltonian']},
+                    'graph_data_path': '../DFT/',
+                    'max_num_nbr': 32,
+                    'radius': 6.0,
+                    'split_file': None,
+                    'test_ratio': 0.1,
+                    'train_ratio': 0.8,
+                    'val_ratio': 0.1},
+ 'losses_metrics': {'losses': [{'loss_weight': 27.211,
+                                'metric': L1Loss(),
+                                'prediction': 'hamiltonian',
+                                'target': 'hamiltonian'}],
+                    'metrics': [{'metric': L1Loss(),
+                                 'prediction': 'hamiltonian',
+                                 'target': 'hamiltonian'}]},
+ 'optim_params': {'gradient_clip_val': 0.0,
+                  'lr': 5e-05,
+                  'lr_decay': 0.5,
+                  'lr_patience': 5,
+                  'max_epochs': 3000,
+                  'min_epochs': 100,
+                  'stop_patience': 30},
+ 'output_nets': {'HamGNN_out': {'add_H0': True,
+                                'band_num_control': 6,
+                                'calculate_band_energy': False,
+                                'collinear_spin': False,
+                                'ham_only': True,
+                                'ham_type': 'openmx',
+                                'k_path': None,
+                                'minMagneticMoment': 0.2,
+                                'nao_max': 26,
+                                'nonlinearity_type': 'gate',
+                                'num_k': 5,
+                                'soc_switch': False,
+                                'spin_constrained': False,
+                                'symmetrize': True},
+                 'output_module': 'HamGNN_out'},
+ 'profiler_params': {'progress_bar_refresh_rat': 1, 'train_dir': './'},
+ 'representation_nets': {'HamGNN_pre': {'build_internal_graph': False,
+                                        'correlation': 2,
+                                        'cutoff': 26.0,
+                                        'cutoff_func': 'cos',
+                                        'edge_sh_normalization': 'component',
+                                        'edge_sh_normalize': True,
+                                        'irreps_edge_sh': '0e + 1o + 2e + 3o + '
+                                                          '4e + 5o + 6e',
+                                        'irreps_node_features': '128x0e+32x1o+32x1e+32x2o+32x2e+32x3o+32x3e+16x4o+16x4e+16x5o+8x5e+8x6e',
+                                        'num_heads': 4,
+                                        'num_hidden_features': 32,
+                                        'num_layers': 3,
+                                        'num_radial': 128,
+                                        'num_types': 128,
+                                        'radial_MLP': [128, 128],
+                                        'radius_scale': 1.01,
+                                        'rbf_func': 'bessel',
+                                        'set_features': True,
+                                        'use_kan': False}},
+ 'setup': {'GNN_Net': 'HamGnnConv',
+           'accelerator': None,
+           'checkpoint_path': '/public/home/lihaozhe/workspace/software/HamGNN/Hamiltonian_models/universal_nonSOC_HamGNN_2.0_scf.ckpt',
+           'hostname': 'gpu010',
+           'ignore_warnings': True,
+           'l_minus_mean': False,
+           'load_from_checkpoint': True,
+           'num_gpus': 0,
+           'precision': 32,
+           'property': 'hamiltonian',
+           'resume': False,
+           'stage': 'test'}}
+Loading graph data from ../DFT/graph_data.npz!
+Building model
+Testing: 0it [00:00, ?it/s]Testing: 100%|██████████| 1/1 [00:24<00:00, 24.15s/it]--------------------------------------------------------------------------------
+DATALOADER:0 TEST RESULTS
+{'test/L1Loss_hamiltonian': 0.0014516559895128012,
+ 'test/total_loss': 0.03950101137161255}
+--------------------------------------------------------------------------------
+Testing: 100%|██████████| 1/1 [00:24<00:00, 24.54s/it]

@@ -1,0 +1,16 @@
+basic:
+  prep_mode: 'grad-epc'
+  outdir: './'
+
+software_path:
+  openmx_dftdata_dir: /public/home/lihaozhe/software/openmx/openmx3.9/DFT_DATA19
+
+material:
+  struct_path: ./Fe-pri.dat
+  nao_max: 14
+  DFT_software: openmx
+  magnetic_type: collinear
+
+grad_epc:
+  epc_sc_matrix: [3, 3, 3]
+

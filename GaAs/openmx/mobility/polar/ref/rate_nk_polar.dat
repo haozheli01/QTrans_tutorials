@@ -1,0 +1,4 @@
+#Fermi level = -0.15378031 Hartree    Density of carrier = 4.51698351e-07 
+#ik_ibz  ibnd  weight_k          enk(Hartree)      scattering_rate(Hartree)
+0        0     0.000031250000    -0.149761452883   3.4883742852896680e-05  
+1        0     0.000250000000    -0.143094385019   6.5879314145324497e-05  

@@ -1,0 +1,16 @@
+basic:
+  prep_mode: 'graph-pack'
+  outdir: './'
+
+software_path:
+  openmx_read_path: ./read_openmx
+
+material:
+  nao_max: 26
+  DFT_software: openmx
+
+graph_pack:
+  HSout_filename: None
+  nonscf_filename: overlap.scfout
+  stdin_filename: openmx_Al.dat
+  data_folder: ./

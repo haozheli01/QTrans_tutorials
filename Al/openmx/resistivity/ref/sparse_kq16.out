@@ -1,0 +1,36 @@
+
+          ____ _______                  
+         / __ \__   __|                 
+        | |  | | | |_ __ __ _ _ __  ___ 
+        | |  | | | | '__/ _` | '_ \/ __|
+        | |__| | | | | | (_| | | | \__ \
+         \___\_\ |_|_|  \__,_|_| |_|___/
+        
+        version: 1.0.0
+        
+Running QTrans using 8 cores across 1 nodes using UNKNOWN scheduler.
+
+K-point batch memory budget: 256 MiB.
+
+Using OPENMX with a 14-orbital definition dictionary.
+
+Running calculation for a non-magnetic system without SOC.
+##################################### Resistivity Calculation ######################################
+Loading sparse gradient matrix from /home/hzli/workspace/QTrans/QTrans-dist/tutorials/Al/openmx/data/grad_mat_sparse.npy...
+
+The symmetry for setting up kpoint is: Fm-3m (225)
+Fermi energy = -4.7578250560112645 eV
+DOS of Fermi level (spin factor not included) = 0.1108199479049779
+----------------------------------------------------------------------------------------------------
+The number of carriers per unit cell is automatically set to be 2.0000.
+Fermi speed(m/s)      x                y                z
+                 7.0905e+05        7.0905e+05        7.0905e+05
+12 %[******->............................................][total: 0.51s, step: 0.51s, remaining: 3.60s]25 %[************->......................................][total: 3.01s, step: 2.50s, remaining: 9.03s]38 %[******************->................................][total: 5.75s, step: 2.74s, remaining: 9.58s]50 %[*************************->.........................][total: 7.60s, step: 1.85s, remaining: 7.60s]62 %[*******************************->...................][total: 9.65s, step: 2.05s, remaining: 5.79s]75 %[*************************************->.............][total: 11.47s, step: 1.81s, remaining: 3.82s]88 %[*******************************************->.......][total: 13.48s, step: 2.01s, remaining: 1.93s]100%[**************************************************->][total: 15.41s, step: 1.93s, remaining: 0.00s]
+---------------transport_eliashberg_function_cal_epc_iso_sparse has run successfully!---------------
+Total peak memory across all ranks: 2.59 GB
+----------------------------------------------------------------------------------------------------
+Ziman's resistance(micro-Ohm*cm) =   9.0455e-01
+Allen's resistance(micro-Ohm*cm) =   2.8555e+00
+----------------------------------------------------------------------------------------------------
+
+######################################## QTRANS JOB SUCCESS ########################################

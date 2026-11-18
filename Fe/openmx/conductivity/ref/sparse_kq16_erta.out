@@ -1,0 +1,67 @@
+
+          ____ _______                  
+         / __ \__   __|                 
+        | |  | | | |_ __ __ _ _ __  ___ 
+        | |  | | | | '__/ _` | '_ \/ __|
+        | |__| | | | | | (_| | | | \__ \
+         \___\_\ |_|_|  \__,_|_| |_|___/
+        
+        version: 1.0.0
+        
+Running QTrans using 8 cores across 1 nodes using UNKNOWN scheduler.
+
+K-point batch memory budget: 256 MiB.
+
+Using OPENMX with a 14-orbital definition dictionary.
+
+Running calculation for a collinear magnetic system without SOC.
+Dealing with a standard ferromagnetic system, and the spin direction is z-axis up.
+
+##################################### Conductivity Calculation #####################################
+Ignore scattering_source in transport block.
+Loading sparse gradient matrix from /home/hzli/workspace/QTrans/QTrans-dist/tutorials/Fe/openmx/data/grad_mat_sparse.npy...
+Using uniform mesh sampling method...
+Using ERTA method to calculate conductivity...
+
+
+The symmetry for setting up kpoint is: Im-3m (229)
+The symmetry for building kpoint mapping is: Im-3m (229) 
+
+The system is a metal, we calculate conductivity.
+Fermi energy =  -4.638517 eV.
+
+----------------------------------------------------------------------------------------------------
+|                                  BZ POINT DISTRIBUTION CHECK (PARALLEL)                          |
+----------------------------------------------------------------------------------------------------
+   Number of FBZ k-points              : 4096
+   Number of IBZ k-points              : 145
+   Number of contributing IBZ k-points : 53
+   Number of FBZ q-points              : 4096
+   Number of MPI ranks being used      : 8
+
+12 %[******->............................................][total: 2.19s, step: 2.19s, remaining: 15.32s]25 %[************->......................................][total: 5.26s, step: 3.07s, remaining: 15.79s]38 %[******************->................................][total: 8.05s, step: 2.79s, remaining: 13.42s]50 %[*************************->.........................][total: 11.03s, step: 2.98s, remaining: 11.03s]62 %[*******************************->...................][total: 14.04s, step: 3.01s, remaining: 8.43s]75 %[*************************************->.............][total: 16.70s, step: 2.65s, remaining: 5.57s]88 %[*******************************************->.......][total: 19.67s, step: 2.97s, remaining: 2.81s]100%[**************************************************->][total: 23.84s, step: 4.17s, remaining: 0.00s]
+-------------------scattering_rate_cal_epc_collinear_sparse has run successfully!-------------------
+====================================================================================================
+                                Energy Relaxation Time Approximation
+====================================================================================================
+Conductivity[spin-1](Siemens/m)      x                y                z
+            x              1.2330e+07       -1.2111e-10        8.4835e-11
+            y              4.3807e-11        1.2330e+07       -3.7078e-10
+            z              8.8611e-11       -7.7505e-11        1.2330e+07
+Seebeck coefficient[spin-1](V/K)      x                y                z
+            x              4.4662e-05       -1.3722e-21        3.7898e-22
+            y              7.4026e-22        4.4662e-05        1.7702e-20
+            z              5.3400e-22       -9.2579e-21        4.4662e-05
+Conductivity[spin-2](Siemens/m)      x                y                z
+            x              5.6874e+06        4.3488e-11       -2.9390e-11
+            y              2.3697e-11        5.6874e+06        1.0818e-11
+            z             -2.0312e-12        1.1302e-11        5.6874e+06
+Seebeck coefficient[spin-2](V/K)      x                y                z
+            x              3.0289e-05       -1.3047e-21       -2.4188e-22
+            y              2.9884e-22        3.0289e-05       -5.3346e-21
+            z              1.0491e-22        1.5133e-21        3.0289e-05
+
+
+Total peak memory across all ranks: 2.23 GB
+
+######################################## QTRANS JOB SUCCESS ########################################

@@ -1,0 +1,62 @@
+
+          ____ _______                  
+         / __ \__   __|                 
+        | |  | | | |_ __ __ _ _ __  ___ 
+        | |  | | | | '__/ _` | '_ \/ __|
+        | |__| | | | | | (_| | | | \__ \
+         \___\_\ |_|_|  \__,_|_| |_|___/
+                                         
+        version: 0.4.0
+        
+Running QTrans in serial mode using SLURM scheduler.
+
+################################################## EPC Gradient Matrix Preparation ##################################################
+Software Subable:
+vasp       : False
+vaspkit    : False
+openmx     : False
+openmx_pp  : False
+openmx_read : True
+abacus     : False
+abacus_pp  : False
+jx         : False
+
+Pseudo-potential reachable:
+vasp       : True
+openmx     : True
+abacus_pot : True
+abacus_orb : True
+
+Using OPENMX with a 14-orbital definition dictionary.
+
+Using GGA-PBE Functional.
+Dealing with a NONE magnetic system.
+
+Structure Information
+Crystal system      : cubic
+Space group         : Fm-3m [225]
+Lattice vectors (ang):
+   -2.019761    0.000000    2.019761
+    0.000000    2.019761    2.019761
+   -2.019761    2.019761    0.000000
+
+  Index  Element       Frac_x      Frac_y      Frac_z
+------------------------------------------------------------
+    1       Al           0.00000    0.00000    0.00000
+------------------------------------------------------------
+
+  Index  Element   Cart_x (ang)  Cart_y (ang)  Cart_z (ang)
+------------------------------------------------------------
+    1       Al             0.00000      0.00000      0.00000
+------------------------------------------------------------
+
+Automatically generate k sampling grid for SCF calculation.
+Reciprocal sampling density (nks*a) is  51.41.
+
+Electron-Phonon Coupling Settings:
+  Supercell Size          : 3   * 3   * 3  
+  Finite Displacement     : 0.010000 angstrom
+  Method of FD            :  forward
+
+
+######################################## QTRANS JOB SUCCESS ########################################
